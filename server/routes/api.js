@@ -48,5 +48,77 @@ router.post('/login',(req,res)=>{
     })
 })
 
+router.get('/events',(req,res)=>{
+    let events = [
+        {
+            "_id":"1",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"2",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"3",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"4",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"5",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        }
+    ]
+    res.json(events);
+})
+
+router.get('/special',(req,res)=>{
+    let events = [
+        {
+            "_id":"1",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"2",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"3",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"4",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        },
+        {
+            "_id":"5",
+            "name":"Auto Expo",
+            "description":"lorem ipsum",
+            "date":"2022-12-29T18:25:43.511Z"
+        }
+    ]
+    res.json(events);
+})
+
 module.exports = router
 
