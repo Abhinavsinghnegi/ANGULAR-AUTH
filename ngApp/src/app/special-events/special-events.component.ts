@@ -8,7 +8,7 @@ import { EventService } from '../services/event.service';
 })
 export class SpecialEventsComponent implements OnInit {
 
-  specialEvents = []
+  specialEvents:any = []
 
   constructor(private _eventService: EventService) { }
 
